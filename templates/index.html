@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Let's check!!!</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">	
+	<link rel="icon" type="image/png" href="static/images/icons/favicon.ico"/>
+	<link rel="stylesheet" type="text/css" href="static/vendor/bootstrap/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="static/fonts/font-awesome-4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="static/vendor/animate/animate.css">
+	<link rel="stylesheet" type="text/css" href="static/vendor/css-hamburgers/hamburgers.min.css">
+	<link rel="stylesheet" type="text/css" href="static/vendor/select2/select2.min.css">
+	<link rel="stylesheet" type="text/css" href="static/css/util.css">
+    <link rel="stylesheet" type="text/css" href="static/css/main.css">
+    <style>
+        table, th, td {
+            border: 1px solid black;
+            border-collapse: collapse;
+        }
+        th, td {
+            padding: 15px;
+        }
+    </style>
+</head>
+<body>
+	<div class="limiter">
+		<div class="container-login100">
+			<div class="wrap-login100">
+                    <span class="login100-form-title">
+                            Employee Details
+                    </span>
+                    <table style="width:50% ">
+                    <tr>
+                        <th style="text-align:center">Employee Id</th>
+                        <th style="text-align:center">Needs Treatment</th> 
+                    </tr>
+                    <tr>
+                    {% for e in event %}
+                    {% for j in e.values() %}
+                    {% for k in j.values() %}
+                       <td style="text-align:center"> {{ k }} </td>
+                    {% endfor %}
+                    </tr>
+                    {% endfor %}
+                    {% endfor %}
+                    </table>
+			</div>
+		</div>
+	</div>
+		
+	<script src="static/vendor/jquery/jquery-3.2.1.min.js"></script>
+	<script src="static/vendor/bootstrap/js/popper.js"></script>
+	<script src="static/vendor/bootstrap/js/bootstrap.min.js"></script>
+	<script src="static/vendor/select2/select2.min.js"></script>
+	<script src="static/vendor/tilt/tilt.jquery.min.js"></script>
+	<script >
+		$('.js-tilt').tilt({
+			scale: 1.1
+		})
+	</script>
+	<script src="js/main.js"></script>
+
+</body>
+</html>

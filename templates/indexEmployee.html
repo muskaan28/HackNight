@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Leave Application!!!</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">	
+	<link rel="icon" type="image/png" href="static/images/icons/favicon.ico"/>
+	<link rel="stylesheet" type="text/css" href="static/vendor/bootstrap/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="static/fonts/font-awesome-4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="static/vendor/animate/animate.css">
+	<link rel="stylesheet" type="text/css" href="static/vendor/css-hamburgers/hamburgers.min.css">
+	<link rel="stylesheet" type="text/css" href="static/vendor/select2/select2.min.css">
+	<link rel="stylesheet" type="text/css" href="static/css/util.css">
+	<link rel="stylesheet" type="text/css" href="static/css/main.css">
+</head>
+<body>
+	<div class="limiter">
+		<div class="container-login100">
+			<div class="wrap-login150">
+				<form class="login150-form validate-form" method="POST" action="">
+					<span class="login100-form-title">
+						Enter the details completely
+					</span>
+					<div class="wrap-input100 validate-input">
+						<input class="input100" type="text" name="empid" placeholder="Enter Employee Id" value="{{
+							request.form.empid }}" required>
+					</div>
+					<div class="wrap-input100 validate-input">
+						<input class="input100" type="number" name="age" placeholder="Enter Age" value="{{
+							request.form.age }}" required>
+					</div>
+					<div class="wrap-input100 validate-input">
+                            <select class="input100" name="gender">
+                                <option value="" disabled selected>Select Gender</option>
+                                <option value="Male">Male</option>
+                                <option value="Female">Female</option>
+                                <option value="Others">Others</option>
+                            </select>
+                    </div>
+                    <div class="wrap-input100 validate-input">
+                            <input class="input100" type="text" name="country" placeholder="Enter Country" value="{{
+                                request.form.country }}" required>
+                    </div>
+                    <div class="wrap-input100 validate-input">
+                            <select class="input100" name="self_employed">
+                                <option value="" disabled selected>Are you self employeed?</option>
+                                <option value="Yes">Yes</option>
+                                <option value="No">No</option>
+                            </select>
+                    </div>
+                    <div class="wrap-input100 validate-input">
+                            <select class="input100" name="family_history">
+                                <option value="" disabled selected>Do you family history of mental illness?</option>
+                                <option value="Yes">Yes</option>
+                                <option value="No">No</option>
+                            </select>
+                    </div>
+                    <div class="wrap-input100 validate-input">
+                            <select class="input100" name="work_interfere">
+                                <option value="" disabled selected>Work Interference?</option>
+                                <option value="Often">Often</option>
+                                <option value="Rarely">Rarely</option>
+                                <option value="Sometimes">Sometimes</option>
+                                <option value="Never">Never</option>
+                            </select>
+                    </div>
+                    <div class="wrap-input100 validate-input">
+                            <select class="input100" name="remote_work">
+                                <option value="" disabled selected>Work Remotely?</option>
+                                <option value="Yes">Yes</option>
+                                <option value="No">No</option>
+                            </select>
+                    </div>
+                    <div class="wrap-input100 validate-input">
+                            <select class="input100" name="tech_company">
+                                <option value="" disabled selected>Tech Company?</option>
+                                <option value="Yes">Yes</option>
+                                <option value="No">No</option>
+                            </select>
+                    </div>
+                    <div class="wrap-input100 validate-input">
+                            <select class="input100" name="benefits">
+                                <option value="" disabled selected>Any Benefits?</option>
+                                <option value="Yes">Yes</option>
+                                <option value="No">No</option>
+                                <option value="Don't know">Don't know</option>
+                            </select>
+                    </div>
+                    <div class="wrap-input100 validate-input">
+                            <select class="input100" name="care_options">
+                                <option value="" disabled selected>Care Options?</option>
+                                <option value="Yes">Yes</option>
+                                <option value="No">No</option>
+                                <option value="Not sure">Not sure</option>
+                            </select>
+                    </div>
+                    <div class="wrap-input100 validate-input">
+                            <select class="input100" name="wellness_program">
+                                <option value="" disabled selected>Wellness Program?</option>
+                                <option value="Yes">Yes</option>
+                                <option value="No">No</option>
+                                <option value="Don't know">Don't know</option>
+                            </select>
+                    </div>
+                    <div class="wrap-input100 validate-input">
+                            <select class="input100" name="seek_help">
+                                <option value="" disabled selected>Seek Help?</option>
+                                <option value="Yes">Yes</option>
+                                <option value="No">No</option>
+                                <option value="Don't know">Don't know</option>
+                            </select>
+                    </div>
+                    <div class="wrap-input100 validate-input">
+                            <select class="input100" name="anonymity">
+                                <option value="" disabled selected>Anonimity?</option>
+                                <option value="Yes">Yes</option>
+                                <option value="No">No</option>
+                                <option value="Don't know">Don't know</option>
+                            </select>
+                    </div>
+                    <div class="wrap-input100 validate-input">
+                            <select class="input100" name="leave">
+                                <option value="" disabled selected>Leave?</option>
+                                <option value="Very easy">Very easy</option>
+                                <option value="Somewhat easy">Somewhat easy</option>
+                                <option value="Somewhat difficult">Somewhat difficult</option>
+                                <option value="Very difficult">Very difficult</option>
+                                <option value="Don't know">Don't know</option>
+                            </select>
+                    </div>
+                    <div class="wrap-input100 validate-input">
+                            <select class="input100" name="mental_health_consequence">
+                                <option value="" disabled selected>Mental Health Consequence?</option>
+                                <option value="Yes">Yes</option>
+                                <option value="Maybe">Maybe</option>
+                                <option value="No">No</option>
+                            </select>
+                    </div>
+                    <div class="wrap-input100 validate-input">
+                            <select class="input100" name="phys_health_consequence">
+                                <option value="" disabled selected>Physical Health Consequence?</option>
+                                <option value="Yes">Yes</option>
+                                <option value="Maybe">Maybe</option>
+                                <option value="No">No</option>
+                            </select>
+                    </div>
+                    <div class="wrap-input100 validate-input">
+                            <select class="input100" name="coworkers">
+                                <option value="" disabled selected>Coworkers?</option>
+                                <option value="Yes">Yes</option>
+                                <option value="Some of them">Some of them</option>
+                                <option value="No">No</option>
+                            </select>
+                    </div>
+                    <div class="wrap-input100 validate-input">
+                            <select class="input100" name="supervisor">
+                                <option value="" disabled selected>Supervisor?</option>
+                                <option value="Yes">Yes</option>
+                                <option value="Some of them">Some of them</option>
+                                <option value="No">No</option>
+                            </select>
+                    </div>
+                    <div class="wrap-input100 validate-input">
+                            <select class="input100" name="mental_health_interview">
+                                <option value="" disabled selected>Mental Health Interview?</option>
+                                <option value="Yes">Yes</option>
+                                <option value="Maybe">Maybe</option>
+                                <option value="No">No</option>
+                            </select>
+                    </div>
+                    <div class="wrap-input100 validate-input">
+                            <select class="input100" name="phys_health_interview">
+                                <option value="" disabled selected>Physical Health Interview?</option>
+                                <option value="Yes">Yes</option>
+                                <option value="Maybe">Maybe</option>
+                                <option value="No">No</option>
+                            </select>
+                    </div>
+                    <div class="wrap-input100 validate-input">
+                            <select class="input100" name="mental_vs_physical">
+                                <option value="" disabled selected>Mental vs Physical?</option>
+                                <option value="Yes">Yes</option>
+                                <option value="Don't know">Don't know</option>
+                                <option value="No">No</option>
+                            </select>
+                    </div>
+                    <div class="wrap-input100 validate-input">
+                            <select class="input100" name="obs_consequence">
+                                <option value="" disabled selected>Observed Negative Consequences?</option>
+                                <option value="Yes">Yes</option>
+                                <option value="No">No</option>
+                            </select>
+                    </div>
+					<div class="container-login100-form-btn">
+						<button class="login100-form-btn">
+							Done
+						</button>
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+		
+	<script src="static/vendor/jquery/jquery-3.2.1.min.js"></script>
+	<script src="static/vendor/bootstrap/js/popper.js"></script>
+	<script src="static/vendor/bootstrap/js/bootstrap.min.js"></script>
+	<script src="static/vendor/select2/select2.min.js"></script>
+	<script src="static/vendor/tilt/tilt.jquery.min.js"></script>
+	<script >
+		$('.js-tilt').tilt({
+			scale: 1.1
+		})
+	</script>
+    <script src="js/main.js"></script>
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/6.5.0/firebase-app.js"></script>
+
+    <!-- TODO: Add SDKs for Firebase products that you want to use
+        https://firebase.google.com/docs/web/setup#config-web-app -->
+
+    <script>
+    // Your web app's Firebase configuration
+    var firebaseConfig = {
+        apiKey: "AIzaSyBCmoC7fFVKRsztfHL_HqmQo29ooLvRBpw",
+        authDomain: "hacknight-65e59.firebaseapp.com",
+        databaseURL: "https://hacknight-65e59.firebaseio.com",
+        projectId: "hacknight-65e59",
+        storageBucket: "",
+        messagingSenderId: "582741754484",
+        appId: "1:582741754484:web:801a11d057c78a8e"
+    };
+    // Initialize Firebase
+    firebase.initializeApp(firebaseConfig);
+    </script>
+
+</body>
+</html>
