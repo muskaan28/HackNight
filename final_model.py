@@ -21,7 +21,7 @@ from pyrebase import pyrebase
 import pandas as pd
 
 config = {
-    "apiKey": "AIzaSyBCmoC7fFVKRsztfHL_HqmQo29ooLvRBpw",
+    "apiKey": "",
     "authDomain": "hacknight-65e59.firebaseapp.com",
     "databaseURL": "https://hacknight-65e59.firebaseio.com",
     "projectId": "hacknight-65e59",
