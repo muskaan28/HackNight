@@ -1,10 +1,9 @@
-WeSpace
+WeSpace Web Application
 
 
-A hassle free and friendly platforms for startups to find premium workspaces.
-Provide a temporary workspace for remote workers and freelancers.
-Friendly and comfortable spaces for students.
+A flask-based web application which provides a common platform for students, startups and remote workers to find hassle free 
+and friendly workspaces.
 
-
+Developed the frontend using HTML+CSS and Bootstrap tech stack. Flask (Python) framework was used for backend development to fetch data from the users
 
 
